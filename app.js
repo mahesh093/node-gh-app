@@ -24,7 +24,7 @@ app.use('/users', usersRouter);
 
 app.get("/test", (_req, res) =>  {
   res.status(200).send("Hello world")
-})
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
