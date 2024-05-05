@@ -6,7 +6,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/mahesh093/node-gh-app'
+        git 'https://github.com/mahesh093/node-gh-app.git'
       }
     }
      
