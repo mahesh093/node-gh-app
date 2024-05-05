@@ -14,3 +14,8 @@ describe("/test endpoint", () => {
 it("Testing to see if Jest works", () => {
     expect(1).toBe(1);
 });
+
+afterEach(async () => {
+    console.log('all')
+    await app.close();
+});
