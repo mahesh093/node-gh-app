@@ -5,9 +5,13 @@ pipeline {
   stages {
         
     stage('Git') {
-      steps {
-        git 'https://github.com/mahesh093/node-gh-app.git'
-      }
+        steps {
+            git branch: 'main',
+                credentialsId: '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',
+                url: 'https://github.com/mahesh093/node-gh-app.git'
+
+            sh "ls -lat"
+        }
     }
      
     stage('Build') {
