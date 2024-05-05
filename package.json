@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon app",
-    "test": "jest --watchAll --no-cache --detectOpenHandles",
+    "test": "jest",
     "test:watch": "jest --watch"
   },
   "dependencies": {

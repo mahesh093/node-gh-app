@@ -15,7 +15,8 @@ it("Testing to see if Jest works", () => {
     expect(1).toBe(1);
 });
 
-afterEach(async () => {
+afterAll(async () => {
     console.log('all')
-    await app.close();
+    app.close();
+    // process.exit(0);
 });
