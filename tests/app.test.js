@@ -18,5 +18,4 @@ it("Testing to see if Jest works", () => {
 afterAll(async () => {
     console.log('all')
     app.close();
-    // process.exit(0);
 });
