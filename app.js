@@ -19,11 +19,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/', indexRouter);
+// app.use('/users', usersRouter);
 
-app.get("/test", (_req, res) =>  {
-  res.status(200).send("Hello world")
+app.get("/test", async (req, res) => {
+  res.json({ message: "pass!" });
 });
 
 // catch 404 and forward to error handler
@@ -45,3 +45,5 @@ app.use(function(err, req, res, next) {
 app.listen(3000, () => {
   console.log('Server listening at port: 3000')
 })
+
+module.exports = app
