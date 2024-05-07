@@ -42,6 +42,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-let server = app.listen(3000)
+let server = app.listen(3000);
 
 module.exports = server 
