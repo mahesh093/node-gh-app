@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/users', usersRouter);
 
 app.get("/test", async (req, res) => {
-  res.json({ message: "passeddd!" });
+  res.json({ message: "pass!" });
 });
 
 app.get("/hellw", async (req, res) => {
