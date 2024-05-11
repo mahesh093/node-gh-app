@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/users', usersRouter);
 
 app.get("/test", async (req, res) => {
-  res.json({ message: "pass!" });
+  res.json({ message: "passeddd!" });
 });
 
 // catch 404 and forward to error handler
