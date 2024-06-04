@@ -27,7 +27,7 @@ app.get("/test", async (req, res) => {
 });
 
 app.get("/hellw", async (req, res) => {
-  res.send("Helllow Nannnaa!!!");
+  res.send("Helllow Madhav!!!");
 });
 
 // catch 404 and forward to error handler
